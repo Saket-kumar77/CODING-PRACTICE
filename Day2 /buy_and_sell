@@ -1,0 +1,9 @@
+int maxProfit(vector<int>& prices) {
+  int a=prices[0];
+  int b=0;
+  for(int i=1;i<prices.size();i++){
+    a=min(m,prices[i]);
+    b=max(b,prices[i]-a);
+  }
+  return b;
+}
